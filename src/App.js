@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from "react";
+import PrimarySearchAppBar from "./components/Header/Header";
+import SearchBox from "./components/SearchBox/SearchBox";
+import { Grid } from "@mui/material"
+import ActionBox from "./components/ActionBox/ActionBox";
+import Sidebar from "./components/Sidebar/Sidebar";
+import DataTable from "./components/DataTable/DataTable";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <PrimarySearchAppBar />
+      <Grid container spacing={2} style={{ padding: "30px 30px 0 30px" }}>
+        <SearchBox />
+        <ActionBox />
+        <Sidebar />
+        <DataTable />
+      </Grid>
+    </>
+  )
 }
-
-export default App;

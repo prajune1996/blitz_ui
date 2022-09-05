@@ -1,38 +1,111 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+*{
+  font-family: "Lato" !important;
+}
+
+.custom__navbar{
+  background: #fdfdfd !important;
+  box-shadow: 0 2px 4px 0 #f3f4f3 !important;
+}
+
+/* search box */
+.search_outer_box{
+  background: #e1dcff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  border-radius: 6px;
+}
+
+.search_button{
+  background: white !important;  
+  border-radius: 6px !important;
+}
+
+.search_box{
+  width: 100%;
+}
+
+/* action box */
+.action_outer_box{
+  background: #fff4ea; 
+  border-radius: 6px;
+}
+
+.grey_text{
+  color:#817f7d
+}
+
+.text-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-left{
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mt-1{
+  margin-top: .4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mb-1{
+  margin-bottom: .4rem;
+}
+
+/* sidebar */
+
+.sidebar_outer_box{
+  background: #e1dcff;
+  padding: 1.5rem 2rem;
+  /* display: flex; */
+  border-radius: 6px;
+}
+
+.sidebar_outer_box li{
+  list-style: none;
+  color:#817f7d;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  padding: 1rem 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar_outer_box li .db_icon{ 
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar_outer_box li .db_icon:hover{ 
+   fill: black;
+}
+
+
+.sidebar_outer_box li:hover{
+  border: 1px solid #817f7d;
+  background: white;
+  border-radius: 10px;
+}
+
+.sidebar_outer_box li .bi-chevron-right{
+  margin-left: auto;
+}
+
+/* data table */
+.MuiDataGrid-columnHeaders{
+  background: #fff4ea;
+  border: none !important;
+}
+
+/* .MuiDataGrid-cell--withRenderer */
+.MuiDataGrid-cell{
+/* border: none !important; */
+}
+
+.MuiDataGrid-root{
+  border: none !important;
+}
+
+.MuiDataGrid-footerContainer{
+  border: none !important;
 }
